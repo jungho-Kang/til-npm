@@ -24,7 +24,7 @@ const slideData = [
 ];
 
 function App() {
-  const [data, setData] = useState();
+  const [data, setData] = useState([]);
 
   useEffect(() => {
     setData([...slideData]);
