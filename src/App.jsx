@@ -1,4 +1,5 @@
 import { ResponsiveLine } from "@nivo/line";
+
 const getData = [
   {
     id: "japan",
