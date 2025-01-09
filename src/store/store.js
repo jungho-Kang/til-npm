@@ -7,11 +7,17 @@
 import { configureStore } from "@reduxjs/toolkit";
 // 카운터용 Reducer를 활용
 import counterReducer from "../features/counter/counterSlice";
+// todo Reduce를 활용
+import todoReducer from "../features/todo/todoSlice";
+// 사용자 정보
+import userReducer from "../features/user/userSlice";
 // 파일명은 주로 store.js라고 칭합니다
 const store = configureStore({
   reducer: {
     // store를 쪼개서 즉, slice해서 사용합니다
     counter: counterReducer,
+    todo: todoReducer,
+    user: userReducer,
   },
 });
 
