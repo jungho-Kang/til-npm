@@ -2,9 +2,10 @@ import { useDispatch, useSelector } from "react-redux";
 import { addTodo, deleteTodo, toggleTodo } from "../features/todo/todoSlice";
 
 function Todo() {
-  // store의 todoSlice의 state 출력
+  // store 의  todoSlice 의 state 출력
   const todos = useSelector(state => state.todo);
   const dispatch = useDispatch();
+
   return (
     <div>
       <h1>Todo</h1>
@@ -21,5 +22,4 @@ function Todo() {
     </div>
   );
 }
-
 export default Todo;

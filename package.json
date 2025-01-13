@@ -4,13 +4,14 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
+    "dev": "vite --host",
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.9.1",
+    "@nivo/bar": "^0.88.0",
     "@nivo/core": "^0.88.0",
     "@nivo/line": "^0.88.0",
     "@reduxjs/toolkit": "^2.5.0",
@@ -26,6 +27,7 @@
     "react-kakao-maps-sdk": "^1.1.27",
     "react-quill": "^2.0.0",
     "react-redux": "^9.2.0",
+    "recoil": "^0.7.7",
     "redux": "^5.0.1",
     "swiper": "^11.1.15",
     "yup": "^1.6.1"

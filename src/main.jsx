@@ -1,12 +1,11 @@
 import { createRoot } from "react-dom/client";
+import { RecoilRoot } from "recoil";
 import App from "./App.jsx";
 import "./index.css";
-import { Provider } from "react-redux";
-import store from "./store/store.js";
 
 createRoot(document.getElementById("root")).render(
-  // 전역 store를 활용함
-  <Provider store={store}>
+  // 전연 store 를 활용함.
+  <RecoilRoot>
     <App />
-  </Provider>,
+  </RecoilRoot>,
 );
